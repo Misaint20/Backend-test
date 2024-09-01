@@ -21,6 +21,6 @@ async function bootstrap() {
     origin: '*', //Se puede escoger orifgen especifico
   })
   
-  await app.listen(3000);
+  await app.listen(process.env.Port || 3000);
 }
 bootstrap();
